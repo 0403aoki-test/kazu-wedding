@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>結婚式・前撮り撮影 | 石口秀一 Wedding Photography</title>
+  <meta name="description" content="結婚式・前撮りの写真・動画撮影。撮影から編集まで一人が担当するウェディングフォトグラファー 石口秀一。丁寧な打ち合わせで、10年後も色褪せない記録を残します。"/>
+  <link rel="canonical" href="https://kazu-wedding.netlify.app/"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://kazu-wedding.netlify.app/"/>
+  <meta property="og:title" content="結婚式・前撮り撮影 | 石口秀一 Wedding Photography"/>
+  <meta property="og:description" content="結婚式・前撮りの写真・動画撮影。撮影から編集まで一人が担当するウェディングフォトグラファー 石口秀一。丁寧な打ち合わせで、10年後も色褪せない記録を残します。"/>
+  <meta property="og:image" content="https://kazu-wedding.netlify.app/photo/vzeehkvJSqiQGI4iabwuLQ.jpg"/>
+  <meta property="og:locale" content="ja_JP"/>
+  <meta property="og:site_name" content="石口秀一 Wedding Photography"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="結婚式・前撮り撮影 | 石口秀一 Wedding Photography"/>
+  <meta name="twitter:description" content="結婚式・前撮りの写真・動画撮影。撮影から編集まで一人が担当するウェディングフォトグラファー。"/>
+  <meta name="twitter:image" content="https://kazu-wedding.netlify.app/photo/vzeehkvJSqiQGI4iabwuLQ.jpg"/>
+  <meta name="google-site-verification" content="SawQTCuk3d7IuwY1sbVT2wY9iocn23lkpLOLlJFwZ-E"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Noto+Sans+JP:wght@200;300;400&family=Noto+Serif+JP:wght@200;300;400&display=swap" rel="stylesheet"/>
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{
+  background:#fdfcfa;color:#262018;
+  font-family:'Noto Sans JP',sans-serif;font-weight:300;
+  line-height:1.8;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+button{cursor:pointer;border:none;background:none;font-family:inherit}
+
+:root{
+  --bg:#fdfcfa;--bg-2:#f7f4f1;--bg-3:#efe9e3;
+  --text:#262018;--text-mid:#6a5a50;--text-lt:#b0a098;
+  --accent:#8b6b4a;--accent-lt:#a88464;--accent-pale:#e5d4c0;
+  --border:rgba(139,107,74,.1);--border-md:rgba(139,107,74,.18);
+  --f-serif:'Noto Serif JP',serif;
+  --f-display:'Cormorant Garamond',serif;
+  --f-sans:'Noto Sans JP',sans-serif;
+}
+
+.photo-wrap{
+  position:relative;overflow:hidden;
+  background:linear-gradient(160deg,#e5d4c0 0%,#f7f4f1 100%);
+  display:flex;align-items:center;justify-content:center;
+}
+.photo-wrap::after{content:'PHOTO';font-family:var(--f-display);font-size:10px;letter-spacing:.3em;color:rgba(139,107,74,.18)}
+.photo-wrap img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.photo-wrap:has(img)::after{display:none}
+
+.container{max-width:960px;margin:0 auto;padding:0 40px}
+
+.reveal{opacity:0;transform:translateY(32px);transition:opacity .9s ease,transform .9s ease}
+.reveal.in{opacity:1;transform:none}
+.reveal-left{opacity:0;transform:translateX(-24px);transition:opacity .9s ease,transform .9s ease}
+.reveal-left.in{opacity:1;transform:none}
+.reveal-right{opacity:0;transform:translateX(24px);transition:opacity .9s ease,transform .9s ease}
+.reveal-right.in{opacity:1;transform:none}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:28px 48px;background:linear-gradient(to bottom,rgba(253,252,250,.9),transparent);transition:all .4s ease}
+.nav.scrolled{background:rgba(253,252,250,.96);backdrop-filter:blur(16px);padding:18px 48px;border-bottom:1px solid var(--border)}
+.nav-logo{font-family:var(--f-display);font-size:18px;font-style:italic;letter-spacing:.18em;color:var(--text);font-weight:300}
+.nav-links{display:flex;gap:36px;align-items:center}
+.nav-links a{font-size:11px;letter-spacing:.14em;color:var(--text-mid);transition:color .3s}
+.nav-links a:hover{color:var(--accent)}
+.nav-cta{font-size:11px;letter-spacing:.14em;color:var(--accent);border-bottom:1px solid rgba(139,107,74,.4);padding-bottom:2px;transition:all .3s}
+.nav-cta:hover{color:var(--text);border-bottom-color:var(--text)}
+@media(max-width:720px){.nav{padding:20px 24px}.nav.scrolled{padding:14px 24px}.nav-links{display:none}}
+
+/* HERO */
+.hero{position:relative;height:100svh;overflow:hidden;display:flex;align-items:flex-end}
+.hero-bg{position:absolute;inset:0}
+.hero-bg .photo-wrap{width:100%;height:100%;background:linear-gradient(135deg,#e5d4c0 0%,#f7f4f1 40%,#fdfcfa 100%)}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to right,rgba(253,252,250,.5) 0%,rgba(253,252,250,.02) 60%),linear-gradient(to top,rgba(253,252,250,.82) 0%,transparent 50%),radial-gradient(ellipse at 100% 100%,rgba(0,0,0,.4) 0%,transparent 65%)}
+.hero-content{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;width:100%;padding:0 64px 72px}
+.hero-catch{writing-mode:vertical-rl;font-family:var(--f-serif);font-weight:200;font-size:clamp(22px,3.5vw,38px);letter-spacing:.18em;color:var(--text);line-height:2;opacity:0;animation:fadeIn 1.2s ease .4s forwards}
+.hero-catch em{font-style:normal;color:var(--accent)}
+.hero-sub-block{text-align:right;opacity:0;animation:fadeIn 1.2s ease .8s forwards}
+.hero-sub-en{font-family:var(--f-display);font-size:11px;font-style:italic;letter-spacing:.24em;color:#fff;margin-bottom:12px;display:block}
+.hero-sub-text{font-size:13px;color:rgba(255,255,255,.95);line-height:2;margin-bottom:28px;white-space:nowrap;text-align:left}
+.hero-btn{display:inline-block;padding:13px 32px;background:var(--accent);border:1px solid var(--accent);font-size:11px;letter-spacing:.18em;color:#fff;transition:all .4s}
+.hero-btn:hover{background:var(--text);border-color:var(--text);color:#fff}
+.hero-scroll{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:10px;opacity:0;animation:fadeIn 1s ease 1.4s forwards}
+.hero-scroll-line{width:1px;height:48px;background:rgba(139,107,74,.2);position:relative;overflow:hidden}
+.hero-scroll-line::after{content:'';position:absolute;top:-100%;left:0;width:1px;height:100%;background:var(--accent);animation:scrollLine 2.2s ease-in-out 1.6s infinite}
+@keyframes scrollLine{0%{top:-100%}100%{top:200%}}
+.hero-scroll-text{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--text-lt)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@media(max-width:720px){
+  .hero-content{flex-direction:column;align-items:flex-start;padding:0 28px 80px;gap:32px}
+  .hero-sub-block{text-align:left}.hero-sub-text{max-width:100%}.hero-catch{font-size:26px}
+}
+
+/* SECTION LABEL */
+.sec-label{display:block;font-family:var(--f-serif);font-size:11px;font-weight:200;letter-spacing:.28em;color:var(--accent);margin-bottom:16px}
+.sec-rule{width:32px;height:1px;background:var(--border-md);margin-bottom:40px}
+
+/* 理念 */
+.philosophy{padding:120px 0;border-top:1px solid var(--border)}
+.philosophy-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.philosophy-photo .photo-wrap{aspect-ratio:3/4;border-radius:1px}
+.philosophy-quote{font-family:var(--f-serif);font-weight:200;font-size:clamp(18px,2.5vw,26px);letter-spacing:.06em;line-height:1.9;color:var(--text);margin-bottom:32px;padding-bottom:32px;border-bottom:1px solid var(--border)}
+.philosophy-body{font-size:14px;color:var(--text-mid);line-height:2.2;margin-bottom:28px}
+.philosophy-sig{font-family:var(--f-display);font-size:15px;font-style:italic;color:var(--accent);letter-spacing:.1em}
+@media(max-width:720px){.philosophy-inner{grid-template-columns:1fr;gap:40px}}
+
+/* 課題 */
+.problem{padding:100px 0;background:var(--bg-2);border-top:1px solid var(--border)}
+.problem-header{margin-bottom:56px}
+.problem-h{font-family:var(--f-serif);font-weight:200;font-size:clamp(20px,3vw,30px);letter-spacing:.06em;line-height:1.7;color:var(--text)}
+.problem-list{display:flex;flex-direction:column;gap:1px}
+.problem-item{display:grid;grid-template-columns:48px 1fr;gap:20px;padding:24px 28px;background:rgba(255,255,255,.6);border:1px solid var(--border);transition:background .3s}
+.problem-item:hover{background:rgba(255,255,255,.9)}
+.problem-num{font-family:var(--f-display);font-size:32px;font-style:italic;color:var(--accent-pale);line-height:1;padding-top:4px}
+.problem-text{font-size:14px;color:var(--text-mid);line-height:1.9;display:flex;align-items:center}
+
+/* 解決策 */
+.solution{padding:100px 0;border-top:1px solid var(--border)}
+.solution-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);margin-top:56px}
+.solution-item{padding:44px 32px;background:var(--bg);border-top:2px solid transparent;transition:all .3s}
+.solution-item:hover{border-top-color:var(--accent);background:var(--bg-2)}
+.solution-icon{font-family:var(--f-display);font-style:italic;font-size:36px;color:var(--accent-pale);margin-bottom:20px;display:block;line-height:1;letter-spacing:.04em}
+.solution-item h3{font-family:var(--f-serif);font-weight:300;font-size:15px;color:var(--text);margin-bottom:12px;letter-spacing:.04em;line-height:1.6}
+.solution-item p{font-size:13px;color:var(--text-mid);line-height:2}
+@media(max-width:720px){.solution-grid{grid-template-columns:1fr;background:transparent;gap:1px}}
+
+/* ギャラリー */
+.portfolio{padding:100px 0 0;border-top:1px solid var(--border)}
+.portfolio-header{margin-bottom:64px}
+.portfolio-main .photo-wrap{width:100%;aspect-ratio:16/9}
+.portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-bottom:2px}
+.portfolio-grid .photo-wrap{aspect-ratio:1/1}
+.portfolio-wide{display:grid;grid-template-columns:2fr 1fr;gap:2px}
+.portfolio-wide .photo-wrap{aspect-ratio:4/3}
+.portfolio-ig{padding:40px;max-width:960px;margin:0 auto;text-align:center;border-top:1px solid var(--border)}
+.portfolio-ig a{display:inline-flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.14em;color:var(--accent);border-bottom:1px solid rgba(139,107,74,.3);padding-bottom:3px;transition:all .3s}
+.portfolio-ig a:hover{color:var(--text);border-bottom-color:var(--text)}
+@media(max-width:720px){.portfolio-grid{grid-template-columns:1fr 1fr}.portfolio-wide{grid-template-columns:1fr}}
+
+/* カレンダー */
+.calendar-section{padding:100px 0;border-top:1px solid var(--border);background:var(--bg-2)}
+.calendar-wrap{margin-top:56px;background:#fff;border:1px solid var(--border);padding:40px}
+.cal-nav{display:flex;align-items:center;justify-content:space-between;margin-bottom:32px}
+.cal-month{font-family:var(--f-display);font-size:22px;font-style:italic;color:var(--text);letter-spacing:.1em}
+.cal-btn{width:36px;height:36px;border:1px solid var(--border);color:var(--text-mid);font-size:16px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .3s;background:#fff}
+.cal-btn:hover{border-color:var(--accent);color:var(--accent)}
+.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+.cal-dow{text-align:center;font-size:10px;letter-spacing:.12em;color:var(--text-lt);padding:8px 0}
+.cal-day{aspect-ratio:1/1;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;border:1px solid transparent;transition:all .2s;position:relative;font-size:13px}
+.cal-day.empty{cursor:default}
+.cal-day.available{color:var(--text);background:rgba(139,107,74,.04)}
+.cal-day.available:hover{border-color:var(--accent);background:rgba(139,107,74,.08)}
+.cal-day.booked{color:var(--text-lt);background:rgba(0,0,0,.02);cursor:default;text-decoration:line-through}
+.cal-day.consultation{color:var(--accent-lt)}
+.cal-day.today{font-weight:400}
+.cal-day-num{font-family:var(--f-display);font-size:16px;font-style:italic;line-height:1}
+.cal-day-status{font-size:8px;letter-spacing:.08em;margin-top:3px}
+.cal-day.available .cal-day-status{color:var(--accent)}
+.cal-day.booked .cal-day-status{color:var(--text-lt)}
+.cal-day.consultation .cal-day-status{color:var(--accent-lt)}
+.cal-legend{display:flex;gap:24px;margin-top:20px;flex-wrap:wrap}
+.cal-legend-item{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--text-mid)}
+.cal-legend-dot{width:8px;height:8px;border-radius:50%}
+@media(max-width:720px){.calendar-wrap{padding:24px 16px}.cal-day-num{font-size:13px}}
+
+/* モーダル */
+.modal-overlay{position:fixed;inset:0;background:rgba(28,46,61,.4);backdrop-filter:blur(4px);z-index:200;display:none;align-items:center;justify-content:center;padding:20px}
+.modal-overlay.show{display:flex}
+.modal{background:#fff;border:1px solid var(--border);padding:48px;max-width:480px;width:100%;position:relative;max-height:90vh;overflow-y:auto}
+.modal-close{position:absolute;top:20px;right:20px;width:32px;height:32px;display:flex;align-items:center;justify-content:center;color:var(--text-lt);font-size:20px;cursor:pointer;transition:color .3s}
+.modal-close:hover{color:var(--text)}
+.modal-date{font-family:var(--f-display);font-size:14px;font-style:italic;color:var(--accent);letter-spacing:.1em;margin-bottom:24px}
+.modal-title{font-family:var(--f-serif);font-weight:200;font-size:20px;color:var(--text);margin-bottom:28px;letter-spacing:.04em}
+.modal .form-group{margin-bottom:20px}
+.modal .form-label{display:block;font-size:10px;letter-spacing:.16em;color:var(--text-lt);margin-bottom:8px;text-transform:uppercase}
+.modal .form-label span{color:var(--accent)}
+.modal .form-input,.modal .form-textarea{width:100%;padding:10px 0;border:none;border-bottom:1px solid var(--border);background:transparent;color:var(--text);font-family:var(--f-sans);font-size:14px;font-weight:300;outline:none;transition:border-color .3s}
+.modal .form-input:focus,.modal .form-textarea:focus{border-bottom-color:var(--accent)}
+.modal .form-textarea{min-height:80px;resize:vertical}
+.modal .form-submit{width:100%;padding:14px;background:var(--accent);color:#fff;font-family:var(--f-sans);font-size:12px;letter-spacing:.16em;transition:all .3s;margin-top:8px;cursor:pointer;border:none}
+.modal .form-submit:hover{background:var(--text)}
+.modal-success{text-align:center;padding:32px 0;display:none}
+.modal-success.show{display:block}
+.modal-success-icon{font-size:36px;margin-bottom:12px}
+.modal-success h3{font-family:var(--f-serif);font-weight:300;font-size:18px;color:var(--text);margin-bottom:8px}
+.modal-success p{font-size:13px;color:var(--text-mid)}
+@media(max-width:720px){.modal{padding:32px 24px}}
+
+/* MID CTA */
+.mid-cta{padding:80px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);text-align:center;background:var(--bg-2)}
+.mid-cta p{font-size:13px;color:var(--text-mid);margin-bottom:28px;letter-spacing:.04em}
+.cta-group{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn-primary{padding:14px 36px;background:var(--accent);color:#fff;font-size:12px;letter-spacing:.14em;font-family:var(--f-sans);transition:all .3s;border:1px solid var(--accent)}
+.btn-primary:hover{background:transparent;color:var(--accent)}
+.btn-line{padding:14px 36px;background:#06c755;color:#fff;font-size:12px;letter-spacing:.14em;font-family:var(--f-sans);transition:all .3s}
+.btn-line:hover{opacity:.85}
+.btn-ghost{padding:14px 36px;background:transparent;color:var(--text-mid);font-size:12px;letter-spacing:.14em;font-family:var(--f-sans);border:1px solid var(--border-md);transition:all .3s}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
+
+/* 料金 */
+.pricing{padding:100px 0;background:var(--bg-2);border-top:1px solid var(--border)}
+.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);margin-top:56px}
+.pricing-card{padding:40px 32px;background:var(--bg-2);position:relative;transition:background .3s;display:flex;flex-direction:column}
+.pricing-card:hover{background:#fff}
+.pricing-badge{display:inline-block;font-size:9px;letter-spacing:.16em;padding:4px 10px;border:1px solid var(--accent);color:var(--accent);margin-bottom:20px}
+.pricing-name{font-family:var(--f-serif);font-weight:300;font-size:17px;color:var(--text);margin-bottom:8px;letter-spacing:.04em}
+.pricing-desc{font-size:12px;color:var(--text-mid);line-height:1.9;margin-bottom:24px;flex:1}
+.pricing-price{font-family:var(--f-display);font-size:36px;font-style:italic;color:var(--accent);margin-bottom:4px}
+.pricing-note{font-size:10px;color:var(--text-lt);letter-spacing:.06em;margin-bottom:24px}
+.pricing-includes{list-style:none;border-top:1px solid var(--border);padding-top:20px;display:flex;flex-direction:column;gap:10px}
+.pricing-includes li{font-size:12px;color:var(--text-mid);display:flex;align-items:flex-start;gap:10px}
+.pricing-includes li::before{content:'—';color:var(--accent);flex-shrink:0}
+.pricing-cta{display:block;width:100%;margin-top:24px;padding:13px;text-align:center;border:1px solid var(--accent);font-size:11px;letter-spacing:.16em;color:var(--accent);transition:all .3s;background:transparent}
+.pricing-cta:hover{background:var(--accent);color:#fff}
+.options{margin-top:56px;padding:36px;border:1px solid var(--border);background:#fff}
+.options-title{font-family:var(--f-serif);font-weight:300;font-size:14px;color:var(--text-mid);letter-spacing:.06em;margin-bottom:24px}
+.options-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border)}
+.options-item{padding:16px 20px;background:var(--bg);font-size:12px;color:var(--text-mid);line-height:1.7}
+.options-item-name{color:var(--text);margin-bottom:4px;font-size:13px}
+@media(max-width:720px){.pricing-grid{grid-template-columns:1fr}.options-grid{grid-template-columns:repeat(2,1fr)}}
+
+/* FLOW */
+.flow{padding:100px 0;border-top:1px solid var(--border)}
+.flow-steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:56px;position:relative}
+.flow-steps::before{content:'';position:absolute;top:28px;left:10%;right:10%;height:1px;background:var(--border-md)}
+.flow-step{display:flex;flex-direction:column;align-items:center;text-align:center;padding:0 8px;position:relative}
+.flow-step-num{width:56px;height:56px;border:1px solid var(--border-md);border-radius:50%;display:flex;align-items:center;justify-content:center;background:#fff;margin-bottom:20px;position:relative;z-index:1}
+.flow-step-num span{font-family:var(--f-display);font-size:18px;font-style:italic;color:var(--accent)}
+.flow-step-title{font-family:var(--f-serif);font-weight:300;font-size:13px;color:var(--text);margin-bottom:8px;letter-spacing:.04em}
+.flow-step-desc{font-size:11px;color:var(--text-mid);line-height:1.8}
+@media(max-width:720px){
+  .flow-steps{grid-template-columns:1fr;gap:0}
+  .flow-steps::before{top:10%;bottom:10%;left:28px;right:auto;width:1px;height:auto}
+  .flow-step{flex-direction:row;text-align:left;gap:20px;padding:0 0 32px 0}
+  .flow-step-num{flex-shrink:0}
+  .flow-step-body{flex:1}
+}
+
+/* FAQ */
+.faq{padding:100px 0;border-top:1px solid var(--border);background:var(--bg-2)}
+.faq-list{margin-top:56px;display:flex;flex-direction:column;gap:1px}
+.faq-item{background:#fff;border:1px solid var(--border)}
+.faq-q{display:flex;align-items:center;justify-content:space-between;padding:24px 28px;cursor:pointer;transition:background .3s;gap:16px}
+.faq-q:hover{background:rgba(139,107,74,.03)}
+.faq-q-text{font-family:var(--f-serif);font-weight:300;font-size:14px;color:var(--text);letter-spacing:.04em;line-height:1.6}
+.faq-icon{font-family:var(--f-display);font-size:20px;color:var(--accent);flex-shrink:0;transition:transform .3s}
+.faq-item.open .faq-icon{transform:rotate(45deg)}
+.faq-a{display:none;padding:0 28px 24px;font-size:13px;color:var(--text-mid);line-height:2.2;border-top:1px solid var(--border)}
+.faq-item.open .faq-a{display:block}
+
+/* 自己紹介 */
+.profile{padding:120px 0;border-top:1px solid var(--border)}
+.profile-inner{display:grid;grid-template-columns:320px 1fr;gap:80px;align-items:start}
+.profile-photo .photo-wrap{aspect-ratio:3/4}
+.profile-name{font-family:var(--f-serif);font-weight:200;font-size:clamp(28px,4vw,44px);letter-spacing:.06em;color:var(--text);margin-bottom:4px}
+.profile-name-en{font-family:var(--f-display);font-size:13px;font-style:italic;color:var(--accent);letter-spacing:.18em;display:block;margin-bottom:32px}
+.profile-message{font-family:var(--f-serif);font-weight:200;font-size:15px;line-height:2.2;color:var(--text);margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid var(--border);letter-spacing:.04em}
+.profile-body{font-size:13px;color:var(--text-mid);line-height:2.2;margin-bottom:28px}
+.profile-tags{display:flex;flex-wrap:wrap;gap:8px}
+.profile-tag{padding:6px 14px;border:1px solid var(--border-md);font-size:11px;color:var(--text-mid);letter-spacing:.06em;background:#fff}
+@media(max-width:720px){.profile-inner{grid-template-columns:1fr;gap:40px}}
+
+/* お問い合わせ */
+.contact{padding:120px 0;border-top:1px solid var(--border);background:var(--bg-2)}
+.contact-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px}
+.contact-lead{font-family:var(--f-serif);font-weight:200;font-size:clamp(24px,3.5vw,38px);letter-spacing:.06em;line-height:1.6;color:var(--text);margin-bottom:20px}
+.contact-body{font-size:13px;color:var(--text-mid);line-height:2.2;margin-bottom:36px}
+.contact-sns{display:flex;flex-direction:column;gap:10px}
+.sns-btn{display:flex;align-items:center;gap:14px;padding:16px 20px;border:1px solid var(--border);font-size:12px;letter-spacing:.08em;color:var(--text-mid);transition:all .3s;background:#fff}
+.sns-btn.ig:hover{border-color:rgba(240,148,51,.5);color:#f09433}
+.sns-btn.ln:hover{border-color:rgba(6,199,85,.5);color:#06c755}
+.sns-icon{font-size:18px}
+.contact-form{background:#fff;border:1px solid var(--border);padding:40px}
+.form-group{margin-bottom:24px}
+.form-label{display:block;font-size:10px;letter-spacing:.16em;color:var(--text-lt);margin-bottom:10px;text-transform:uppercase}
+.form-label span{color:var(--accent)}
+.form-input,.form-textarea{width:100%;padding:12px 0;border:none;border-bottom:1px solid var(--border);background:transparent;color:var(--text);font-family:var(--f-sans);font-size:14px;font-weight:300;outline:none;transition:border-color .3s}
+.form-input:focus,.form-textarea:focus{border-bottom-color:var(--accent)}
+.form-textarea{min-height:120px;resize:vertical}
+.form-submit{width:100%;padding:16px;background:var(--accent);color:#fff;font-family:var(--f-sans);font-size:12px;letter-spacing:.16em;transition:all .3s;margin-top:8px;cursor:pointer;border:none}
+.form-submit:hover{background:var(--text);color:#fff}
+.form-success{display:none;text-align:center;padding:48px 0}
+.form-success.show{display:block}
+.form-success-icon{font-size:40px;margin-bottom:16px}
+.form-success h3{font-family:var(--f-serif);font-weight:300;font-size:20px;color:var(--text);margin-bottom:8px;letter-spacing:.06em}
+.form-success p{font-size:13px;color:var(--text-mid)}
+@media(max-width:720px){.contact-inner{grid-template-columns:1fr;gap:48px}.contact-form{padding:28px 24px}}
+
+/* FOOTER */
+.footer{padding:56px 0 32px;border-top:1px solid var(--border);background:var(--bg)}
+.footer-inner{max-width:960px;margin:0 auto;padding:0 40px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:24px}
+.footer-logo{font-family:var(--f-display);font-size:20px;font-style:italic;color:var(--text-lt);letter-spacing:.18em}
+.footer-links{display:flex;gap:24px;flex-wrap:wrap}
+.footer-links a{font-size:11px;letter-spacing:.1em;color:var(--text-lt);transition:color .3s}
+.footer-links a:hover{color:var(--accent)}
+.footer-copy{width:100%;padding-top:28px;border-top:1px solid var(--border);font-size:10px;color:var(--text-lt);letter-spacing:.08em;text-align:center}
+
+/* スマホ固定CTA */
+.fixed-cta{display:none;position:fixed;bottom:0;left:0;right:0;z-index:150;display:flex;border-top:1px solid var(--border)}
+.fixed-cta a{flex:1;padding:16px 8px;text-align:center;font-size:12px;letter-spacing:.1em;font-family:var(--f-sans);transition:all .3s}
+.fixed-cta .fc-ig{background:var(--accent);color:#fff}
+.fixed-cta .fc-ig:hover{background:var(--text)}
+.fixed-cta .fc-ln{background:#06c755;color:#fff}
+.fixed-cta .fc-ln:hover{opacity:.85}
+@media(min-width:721px){.fixed-cta{display:none!important}}
+@media(max-width:720px){.fixed-cta{display:flex!important};body{padding-bottom:56px}}
+
+/* ページトップボタン */
+.to-top{position:fixed;bottom:80px;right:24px;width:44px;height:44px;background:#fff;border:1px solid var(--border-md);display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:18px;cursor:pointer;transition:all .3s;opacity:0;pointer-events:none;z-index:140}
+.to-top.show{opacity:1;pointer-events:auto}
+.to-top:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+@media(max-width:720px){.to-top{bottom:72px;right:16px}}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "name": "石口秀一",
+      "alternateName": "Hidekazu Ishiguchi",
+      "jobTitle": "ウェディングフォトグラファー",
+      "url": "https://kazu-wedding.netlify.app/",
+      "image": "https://kazu-wedding.netlify.app/photo/S__19423462.jpg",
+      "description": "結婚式の写真・動画撮影を一人で担当するウェディングフォトグラファー。"
+    },
+    {
+      "@type": "PhotographyBusiness",
+      "name": "石口秀一 Wedding Photography",
+      "description": "撮影から動画編集まで一人が担当。大切な一日を、10年後も色褪せない記録として残します。",
+      "url": "https://kazu-wedding.netlify.app/",
+      "image": "https://kazu-wedding.netlify.app/photo/vzeehkvJSqiQGI4iabwuLQ.jpg",
+      "priceRange": "¥42,800〜",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "撮影プラン",
+        "itemListElement": [
+          {"@type": "Offer", "name": "前撮りプラン", "price": "42800", "priceCurrency": "JPY"},
+          {"@type": "Offer", "name": "挙式・披露宴プラン", "price": "110000", "priceCurrency": "JPY"},
+          {"@type": "Offer", "name": "前撮り フォト＆ムービー", "price": "92000", "priceCurrency": "JPY"}
+        ]
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- Netlify Forms 検知用（非表示） -->
+<form name="contact" data-netlify="true" hidden>
+  <input name="name"/><input name="email"/><input name="date"/><input name="message"/>
+</form>
+<form name="modal-contact" data-netlify="true" hidden>
+  <input name="name"/><input name="email"/><input name="plan"/><input name="date"/><input name="message"/>
+</form>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-logo">Ishiguchi</div>
+  <div class="nav-links">
+    <a href="#portfolio">ギャラリー</a>
+    <a href="#pricing">料金</a>
+    <a href="#flow">ご依頼の流れ</a>
+    <a href="#profile">自己紹介</a>
+    <a href="#contact" class="nav-cta">相談する</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg"><div class="photo-wrap" style="width:100%;height:100%"><img src="photo/vzeehkvJSqiQGI4iabwuLQ.jpg" alt="結婚式の一場面 — 石口秀一 Wedding Photography"/></div></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 class="hero-catch">ふたりらしい瞬間を、<em>そのままに。</em></h1>
+    <div class="hero-sub-block">
+      <p class="hero-sub-text">撮影から編集まで、すべて一人が担当します。</p>
+      <a href="#contact" class="hero-btn">無料で相談する</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="hero-scroll-line"></div>
+    <span class="hero-scroll-text">Scroll</span>
+  </div>
+</section>
+
+<!-- 理念 -->
+<section class="philosophy">
+  <div class="container">
+    <div class="philosophy-inner">
+      <div class="philosophy-photo reveal-left">
+        <div class="photo-wrap" style="aspect-ratio:3/4"><img src="photo/10D52B71-AD19-4AF6-A081-8A57F997EF3D2025-11-24_12-24-55_822.jpg" alt="フォトグラファー 石口秀一"/></div>
+      </div>
+      <div class="reveal-right">
+        <span class="sec-label">理念</span>
+        <div class="sec-rule"></div>
+        <p class="philosophy-quote">
+          儚く過ぎゆく瞬間を静かにすくい取り、<br/>
+          華やかさの奥にある想いを<br/>
+          写真という形に昇華させます。
+        </p>
+        <p class="philosophy-body">
+          カメラマンとして活動を始めてから、多くの結婚式に関わってきました。そのなかで気づいたことがあります。10年後に見返したとき、「あのときの空気感」「あの瞬間の表情」がよみがえるような写真こそが、本当に価値のある記録だということ。<br/><br/>
+          演出された笑顔ではなく、自然に溢れた表情を。指示された構図ではなく、その場で生まれた瞬間を。そのために、事前の打ち合わせを徹底し、当日は式の空気に溶け込みながらシャッターを切り続けます。
+        </p>
+        <div class="philosophy-sig">— 石口秀一</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 課題 -->
+<section class="problem" id="problem">
+  <div class="container">
+    <div class="problem-header reveal">
+      <h2 class="problem-h">こんな不安を<br/>お持ちではないですか？</h2>
+    </div>
+    <div class="problem-list">
+      <div class="problem-item reveal">
+        <div class="problem-num">01</div>
+        <div class="problem-text">事前にどんな写真になるか、イメージが掴めない…</div>
+      </div>
+      <div class="problem-item reveal">
+        <div class="problem-num">02</div>
+        <div class="problem-text">当日、自分たちらしい自然な表情を残してもらえるか不安…</div>
+      </div>
+      <div class="problem-item reveal">
+        <div class="problem-num">03</div>
+        <div class="problem-text">写真と動画、別々に頼むと窓口が増えて管理が大変…</div>
+      </div>
+      <div class="problem-item reveal">
+        <div class="problem-num">04</div>
+        <div class="problem-text">当日どう動けばいいか分からなくて、ぎこちなくなりそう…</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 解決策 -->
+<section class="solution" id="solution">
+  <div class="container">
+    <div class="reveal">
+      <span class="sec-label">選ばれる3つの理由</span>
+      <div class="sec-rule"></div>
+      <h2 style="font-family:var(--f-serif);font-weight:200;font-size:clamp(20px,3vw,30px);letter-spacing:.06em;line-height:1.7;color:var(--text)">
+        一人が担当するから、<br/>すべてが安心につながります。
+      </h2>
+    </div>
+    <div class="solution-grid">
+      <div class="solution-item reveal">
+        <span class="solution-icon">01</span>
+        <h3>丁寧な打ち合わせ</h3>
+        <p>当日までに必ず事前ヒアリングを実施。ご要望・不安・当日の流れを一緒に確認し、不安をゼロにしてから当日を迎えていただきます。</p>
+      </div>
+      <div class="solution-item reveal">
+        <span class="solution-icon">02</span>
+        <h3>写真と動画、どちらも対応</h3>
+        <p>写真撮影から動画撮影・編集まで、すべて一人が担当。窓口が一つなので、連絡がスムーズで、世界観の一貫性も保てます。</p>
+      </div>
+      <div class="solution-item reveal">
+        <span class="solution-icon">03</span>
+        <h3>一人が担当するから、世界観がブレない</h3>
+        <p>撮影から編集まですべて同じ一人が担当するから、写真と動画で世界観が統一されます。窓口も一つなので、やり取りがシンプルで安心です。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ギャラリー -->
+<section class="portfolio" id="portfolio">
+  <div class="container">
+    <div class="portfolio-header reveal">
+      <span class="sec-label">ギャラリー</span>
+      <div class="sec-rule"></div>
+    </div>
+  </div>
+  <div class="portfolio-main reveal" style="padding:0 40px;max-width:960px;margin:0 auto">
+    <div class="photo-wrap" style="aspect-ratio:16/9"><img src="photo/DSC02762_ソフト寄り.JPG" alt="結婚式 ウェディングフォト撮影"/></div>
+  </div>
+  <div style="max-width:960px;margin:2px auto;padding:0 40px">
+    <div class="portfolio-grid">
+      <div class="photo-wrap reveal" style="aspect-ratio:1/1"><img src="photo/DSC02642.jpg" alt="前撮り ウェディングフォト"/></div>
+      <div class="photo-wrap reveal" style="aspect-ratio:1/1"><img src="photo/314C9DBE-8905-4516-87C3-1D8118B5AD1EDSC05641.jpg" alt="挙式 披露宴 写真撮影"/></div>
+      <div class="photo-wrap reveal" style="aspect-ratio:1/1"><img src="photo/zivcGpo8Rkabav_kuBK8dg.jpg" alt="前撮り ロケーション撮影"/></div>
+    </div>
+  </div>
+  <div style="max-width:960px;margin:2px auto;padding:0 40px">
+    <div class="portfolio-wide">
+      <div class="photo-wrap reveal" style="aspect-ratio:4/3"><img src="photo/DSC09885.jpg" alt="ウェディングフォト 自然な表情の撮影"/></div>
+      <div class="photo-wrap reveal" style="aspect-ratio:4/3"><img src="photo/hjY_Wl4hTt-j7YFviN997w.jpg" alt="前撮り 写真・動画撮影"/></div>
+    </div>
+  </div>
+  <div class="portfolio-ig reveal">
+    <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">最新作はInstagramで見る →</a>
+  </div>
+</section>
+
+<!-- カレンダー -->
+<section class="calendar-section" id="calendar">
+  <div class="container">
+    <div class="reveal">
+      <span class="sec-label">空き日程</span>
+      <div class="sec-rule"></div>
+      <h2 style="font-family:var(--f-serif);font-weight:200;font-size:clamp(20px,3vw,30px);letter-spacing:.06em;color:var(--text)">撮影可能な日程</h2>
+    </div>
+    <div class="calendar-wrap reveal">
+      <div class="cal-nav">
+        <button class="cal-btn" id="cal-prev">‹</button>
+        <div class="cal-month" id="cal-month-label"></div>
+        <button class="cal-btn" id="cal-next">›</button>
+      </div>
+      <div class="cal-grid" id="cal-grid"></div>
+      <div class="cal-legend">
+        <div class="cal-legend-item"><div class="cal-legend-dot" style="background:var(--accent)"></div>空きあり</div>
+        <div class="cal-legend-item"><div class="cal-legend-dot" style="background:var(--accent-pale)"></div>応相談</div>
+        <div class="cal-legend-item"><div class="cal-legend-dot" style="background:#ddd"></div>埋まり</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MID CTA -->
+<section class="mid-cta">
+  <div class="reveal">
+    <p>まずは無料でお話しします。</p>
+    <div class="cta-group">
+      <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="btn-primary" style="display:inline-flex;align-items:center;gap:8px"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>Instagram でDM</a>
+      <a href="https://line.me/" target="_blank" rel="noopener noreferrer" class="btn-line" style="display:inline-flex;align-items:center;gap:8px"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>LINE で相談</a>
+      <a href="#contact" class="btn-ghost">メールで相談</a>
+    </div>
+  </div>
+</section>
+
+<!-- 料金 -->
+<section class="pricing" id="pricing">
+  <div class="container">
+    <div class="reveal">
+      <span class="sec-label">料金</span>
+      <div class="sec-rule"></div>
+      <h2 style="font-family:var(--f-serif);font-weight:200;font-size:clamp(20px,3vw,30px);letter-spacing:.06em;color:var(--text)">サービスと料金</h2>
+    </div>
+    <div class="pricing-grid" id="pricing-grid"></div>
+    <div class="options reveal">
+      <div class="options-title">追加できるオプション</div>
+      <div class="options-grid" id="options-grid"></div>
+    </div>
+    <p class="reveal" style="font-size:12px;color:var(--text-lt);line-height:2;margin-top:24px">
+      ※ 料金はプランや撮影内容によって異なります。まずはお気軽にご相談ください。<br/>
+      ※ 出張費・交通費が発生する場合は別途ご相談となります。
+    </p>
+  </div>
+</section>
+
+<!-- FLOW -->
+<section class="flow" id="flow">
+  <div class="container">
+    <div class="reveal">
+      <span class="sec-label">ご依頼の流れ</span>
+      <div class="sec-rule"></div>
+      <h2 style="font-family:var(--f-serif);font-weight:200;font-size:clamp(20px,3vw,30px);letter-spacing:.06em;color:var(--text)">はじめてでも安心の5ステップ</h2>
+    </div>
+    <div class="flow-steps reveal">
+      <div class="flow-step">
+        <div class="flow-step-num"><span>01</span></div>
+        <div class="flow-step-body">
+          <div class="flow-step-title">ご相談</div>
+          <div class="flow-step-desc">Instagram DM・LINE・メールフォームからお気軽に</div>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-step-num"><span>02</span></div>
+        <div class="flow-step-body">
+          <div class="flow-step-title">ヒアリング</div>
+          <div class="flow-step-desc">オンラインまたは対面で、ご要望を丁寧にお聞きします（無料）</div>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-step-num"><span>03</span></div>
+        <div class="flow-step-body">
+          <div class="flow-step-title">お申し込み</div>
+          <div class="flow-step-desc">日程・プランが確定したらお申し込み完了</div>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-step-num"><span>04</span></div>
+        <div class="flow-step-body">
+          <div class="flow-step-title">当日撮影</div>
+          <div class="flow-step-desc">リラックスして楽しんでいただくだけでOKです</div>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-step-num"><span>05</span></div>
+        <div class="flow-step-body">
+          <div class="flow-step-title">データ納品</div>
+          <div class="flow-step-desc">撮影後、約1ヶ月以内にデータをお届けします</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="reveal">
+      <span class="sec-label">よくあるご質問</span>
+      <div class="sec-rule"></div>
+      <h2 style="font-family:var(--f-serif);font-weight:200;font-size:clamp(20px,3vw,30px);letter-spacing:.06em;color:var(--text)">FAQ</h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-text">納品までどれくらいかかりますか？</span><span class="faq-icon">+</span></div>
+        <div class="faq-a">撮影後、通常1ヶ月以内にデータをお届けしています。お急ぎの場合は24時間納品オプションもご用意しています。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-text">撮影当日の服装や準備はありますか？</span><span class="faq-icon">+</span></div>
+        <div class="faq-a">特別な準備は必要ありません。事前のヒアリングでご希望のイメージをお聞きし、当日の流れも一緒に確認します。服装については希望があればアドバイスもできます。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-text">データはどのように受け取れますか？</span><span class="faq-icon">+</span></div>
+        <div class="faq-a">Googleドライブなどのクラウドサービスでお渡しします。ダウンロード方法についても丁寧にご説明します。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-text">撮影場所の相談はできますか？</span><span class="faq-icon">+</span></div>
+        <div class="faq-a">もちろんです。思い出の場所、季節の風景、式場など、ご希望に合わせてご提案します。ロケハンが必要な場合も対応可能です。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span class="faq-q-text">急なキャンセルや日程変更はできますか？</span><span class="faq-icon">+</span></div>
+        <div class="faq-a">日程変更は可能な限り対応します。キャンセルポリシーについては、お申し込み時に詳しくご説明します。まずはお気軽にご相談ください。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 自己紹介 -->
+<section class="profile" id="profile">
+  <div class="container">
+    <div class="profile-inner">
+      <div class="profile-photo reveal-left">
+        <div class="photo-wrap" style="aspect-ratio:3/4"><img src="photo/S__19423462.jpg" alt="石口秀一"/></div>
+      </div>
+      <div class="reveal-right">
+        <span class="sec-label">自己紹介</span>
+        <div class="sec-rule"></div>
+        <h2 class="profile-name">石口秀一</h2>
+        <span class="profile-name-en">Hidekazu Ishiguchi</span>
+        <p class="profile-message">
+          写真は一瞬を切り取るものではなく、<br/>
+          時を超えて心に語りかける存在だと考えています。
+        </p>
+        <p class="profile-body">
+          結婚式という特別な日、その光や空気、交わされる言葉までも丁寧に写し取り、未来へと残していきたい。10年後、20年後に写真を開いたとき、あの日の温度や想いが鮮やかに蘇る——そんな体験を届けることが、私のフォトグラファーとしての使命です。<br/><br/>
+          写真・動画どちらも対応できるため、「全部まとめてお任せしたい」というご要望にもお応えできます。
+        </p>
+        <div class="profile-tags">
+          <span class="profile-tag">写真撮影</span>
+          <span class="profile-tag">動画撮影・編集</span>
+          <span class="profile-tag">丁寧な打ち合わせ</span>
+          <span class="profile-tag">フットワーク軽め</span>
+          <span class="profile-tag">リーズナブル</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- お問い合わせ -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact-inner">
+      <div class="reveal">
+        <span class="sec-label">お問い合わせ</span>
+        <div class="sec-rule"></div>
+        <h2 class="contact-lead">まずは、<br/>お気軽にどうぞ。</h2>
+        <p class="contact-body">撮影の相談、料金の確認など、どんな内容でもお気軽にご連絡ください。返信は通常２営業日以内にいたします。</p>
+        <div class="contact-sns">
+          <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="sns-btn ig">
+            <span class="sns-icon"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></span>Instagram で DM する
+          </a>
+          <a href="https://line.me/" target="_blank" rel="noopener noreferrer" class="sns-btn ln">
+            <span class="sns-icon"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg></span>LINE で相談する
+          </a>
+        </div>
+      </div>
+      <div class="contact-form reveal">
+        <div id="contact-form-inner">
+          <div class="form-group">
+            <label class="form-label">お名前<span>*</span></label>
+            <input class="form-input" id="f-name" placeholder="山田 花子"/>
+          </div>
+          <div class="form-group">
+            <label class="form-label">メールアドレス<span>*</span></label>
+            <input class="form-input" type="email" id="f-email" placeholder="example@email.com"/>
+          </div>
+          <div class="form-group">
+            <label class="form-label">挙式予定日</label>
+            <input class="form-input" type="date" id="f-date"/>
+          </div>
+          <div class="form-group">
+            <label class="form-label">ご相談内容<span>*</span></label>
+            <textarea class="form-textarea" id="f-msg" placeholder="ご希望のサービスや気になること、なんでもお気軽にどうぞ。"></textarea>
+          </div>
+          <button class="form-submit" onclick="handleSubmit()">相談を送る</button>
+        </div>
+        <div class="form-success" id="form-success">
+          <div class="form-success-icon">✉️</div>
+          <h3>送信しました</h3>
+          <p>２営業日以内にご連絡いたします。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">Ishiguchi</div>
+    <div class="footer-links">
+      <a href="#portfolio">ギャラリー</a>
+      <a href="#pricing">料金</a>
+      <a href="#flow">ご依頼の流れ</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">お問い合わせ</a>
+    </div>
+    <div class="footer-copy">© 2026 Hidekazu Ishiguchi Photography. All rights reserved.</div>
+  </div>
+</footer>
+
+<!-- スマホ固定CTA -->
+<div class="fixed-cta">
+  <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="fc-ig"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="vertical-align:middle;margin-right:6px"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>Instagram でDM</a>
+  <a href="https://line.me/" target="_blank" rel="noopener noreferrer" class="fc-ln"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="vertical-align:middle;margin-right:6px"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>LINE で相談</a>
+</div>
+
+<!-- ページトップボタン -->
+<button class="to-top" id="to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<!-- カレンダーモーダル -->
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal">
+    <div class="modal-close" onclick="closeModal()">×</div>
+    <div id="modal-form-wrap">
+      <div class="modal-date" id="modal-date-label"></div>
+      <h3 class="modal-title">この日程で相談する</h3>
+      <div class="form-group">
+        <label class="form-label">お名前<span>*</span></label>
+        <input class="form-input" id="m-name" placeholder="山田 花子"/>
+      </div>
+      <div class="form-group">
+        <label class="form-label">メールアドレス<span>*</span></label>
+        <input class="form-input" type="email" id="m-email" placeholder="example@email.com"/>
+      </div>
+      <div class="form-group">
+        <label class="form-label">希望プラン</label>
+        <input class="form-input" id="m-plan" placeholder="前撮り / 挙式 / フォト＆ムービー など"/>
+      </div>
+      <div class="form-group">
+        <label class="form-label">ご相談内容<span>*</span></label>
+        <textarea class="form-textarea" id="m-msg" placeholder="気になることやご要望をお気軽にどうぞ。"></textarea>
+      </div>
+      <input type="hidden" id="m-date"/>
+      <button class="form-submit" onclick="handleModalSubmit()">相談を送る</button>
+    </div>
+    <div class="modal-success" id="modal-success">
+      <div class="modal-success-icon">✉️</div>
+      <h3>送信しました</h3>
+      <p>２営業日以内にご連絡いたします。</p>
+    </div>
+  </div>
+</div>
+
+<script>
+// ===== 料金データ =====
+const plans = [
+  {badge:'前撮り・フォトウェディング',name:'前撮りプラン',desc:'思い出の場所や季節の風景と共に、自然体のお二人を丁寧に記録します。',price:'¥42,800',note:'出張費込み・打ち合わせあり',includes:['2時間の撮影','100枚以上の納品','色味補正あり']},
+  {badge:'挙式・披露宴',name:'挙式・披露宴プラン',desc:'控室から送賓まで、一瞬一瞬を丁寧に記録。ゲストでは撮りきれない表情を残します。',price:'¥110,000',note:'出張費込み・打ち合わせあり',includes:['控室～送賓の撮影','指示書OK','800枚以上納品']},
+  {badge:'一番人気',name:'前撮り フォト＆ムービー',desc:'写真と動画の両方を一人が担当。世界観を統一したまま、特別な一日を残します。',price:'¥92,000',note:'出張費込み・打ち合わせあり',includes:['写真100枚以上納品','動画1本（音源指定OK）','色味補正あり']},
+];
+const options = [
+  {name:'データ無制限',price:'¥20,000'},{name:'時間延長',price:'¥5,000〜'},
+  {name:'二次会撮影',price:'¥30,000'},{name:'アルバム',price:'¥16,000〜'},
+  {name:'24時間納品',price:'¥10,000〜'},
+];
+const pg = document.getElementById('pricing-grid');
+plans.forEach(p => {
+  const el = document.createElement('div');
+  el.className = 'pricing-card reveal';
+  el.innerHTML = `<div class="pricing-badge">${p.badge}</div><div class="pricing-name">${p.name}</div><div class="pricing-desc">${p.desc}</div><div class="pricing-price">${p.price}<span style="font-size:16px">〜</span></div><div class="pricing-note">${p.note}</div><ul class="pricing-includes">${p.includes.map(i=>`<li>${i}</li>`).join('')}</ul><a href="#contact" class="pricing-cta">詳しく相談する</a>`;
+  pg.appendChild(el);
+});
+const og = document.getElementById('options-grid');
+options.forEach(o => {
+  const el = document.createElement('div');
+  el.className = 'options-item';
+  el.innerHTML = `<div class="options-item-name">${o.name}</div><div>${o.price}</div>`;
+  og.appendChild(el);
+});
+
+// ===== カレンダー =====
+// 空き状況：'available'=空き, 'booked'=埋まり, 'consultation'=応相談
+// ※ 実際の空き状況に合わせて手動で更新してください
+const availability = {
+  '2026-06-07':'booked','2026-06-08':'booked','2026-06-13':'available',
+  '2026-06-14':'available','2026-06-15':'consultation','2026-06-20':'available',
+  '2026-06-21':'available','2026-06-22':'available','2026-06-27':'available',
+  '2026-06-28':'booked','2026-07-04':'available','2026-07-05':'available',
+  '2026-07-11':'available','2026-07-12':'consultation','2026-07-18':'available',
+  '2026-07-19':'available','2026-07-20':'available','2026-07-25':'booked',
+  '2026-07-26':'available',
+};
+
+let calYear, calMonth;
+const now = new Date();
+calYear = now.getFullYear(); calMonth = now.getMonth();
+
+const dows = ['日','月','火','水','木','金','土'];
+const monthNames = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+
+function renderCalendar() {
+  const label = document.getElementById('cal-month-label');
+  label.textContent = `${calYear}年${calMonth+1}月`;
+  const grid = document.getElementById('cal-grid');
+  grid.innerHTML = '';
+  dows.forEach(d => {
+    const el = document.createElement('div');
+    el.className = 'cal-dow'; el.textContent = d; grid.appendChild(el);
+  });
+  const first = new Date(calYear, calMonth, 1).getDay();
+  const days = new Date(calYear, calMonth+1, 0).getDate();
+  for(let i=0;i<first;i++){const el=document.createElement('div');el.className='cal-day empty';grid.appendChild(el);}
+  for(let d=1;d<=days;d++){
+    const el = document.createElement('div');
+    const dateStr = `${calYear}-${String(calMonth+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+    const status = availability[dateStr] || '';
+    el.className = `cal-day ${status}`;
+    const isToday = (d===now.getDate()&&calMonth===now.getMonth()&&calYear===now.getFullYear());
+    if(isToday) el.classList.add('today');
+    const statusLabel = status==='available'?'空きあり':status==='booked'?'埋まり':status==='consultation'?'応相談':'';
+    el.innerHTML = `<span class="cal-day-num">${d}</span>${statusLabel?`<span class="cal-day-status">${statusLabel}</span>`:''}`;
+    if(status==='available'||status==='consultation'){
+      el.addEventListener('click',()=>openModal(dateStr,d));
+    }
+    grid.appendChild(el);
+  }
+}
+document.getElementById('cal-prev').addEventListener('click',()=>{calMonth--;if(calMonth<0){calMonth=11;calYear--;}renderCalendar();});
+document.getElementById('cal-next').addEventListener('click',()=>{calMonth++;if(calMonth>11){calMonth=0;calYear++;}renderCalendar();});
+renderCalendar();
+
+// ===== モーダル =====
+function openModal(dateStr, day) {
+  const [y,m,d] = dateStr.split('-');
+  document.getElementById('modal-date-label').textContent = `${y}年${parseInt(m)}月${parseInt(d)}日`;
+  document.getElementById('m-date').value = dateStr;
+  document.getElementById('modal-overlay').classList.add('show');
+  document.getElementById('modal-form-wrap').style.display = '';
+  document.getElementById('modal-success').classList.remove('show');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal() {
+  document.getElementById('modal-overlay').classList.remove('show');
+  document.body.style.overflow = '';
+}
+document.getElementById('modal-overlay').addEventListener('click', e => {
+  if(e.target===document.getElementById('modal-overlay')) closeModal();
+});
+function handleModalSubmit() {
+  const name = document.getElementById('m-name').value.trim();
+  const email = document.getElementById('m-email').value.trim();
+  const msg = document.getElementById('m-msg').value.trim();
+  if(!name||!email||!msg){alert('お名前・メールアドレス・ご相談内容は必須です。');return;}
+  const btn = document.querySelector('#modal-form-wrap .form-submit');
+  btn.disabled = true;
+  fetch('/', {
+    method: 'POST',
+    headers: {'Content-Type':'application/x-www-form-urlencoded'},
+    body: new URLSearchParams({
+      'form-name': 'modal-contact',
+      name,
+      email,
+      plan: document.getElementById('m-plan').value.trim(),
+      date: document.getElementById('m-date').value,
+      message: msg
+    }).toString()
+  })
+  .then(() => {
+    document.getElementById('modal-form-wrap').style.display = 'none';
+    document.getElementById('modal-success').classList.add('show');
+  })
+  .catch(() => {
+    alert('送信に失敗しました。しばらくしてから再度お試しください。');
+    btn.disabled = false;
+  });
+}
+
+// ===== NAV =====
+const nav = document.getElementById('nav');
+window.addEventListener('scroll',()=>{
+  nav.classList.toggle('scrolled',window.scrollY>40);
+  document.getElementById('to-top').classList.toggle('show',window.scrollY>400);
+});
+
+// ===== REVEAL =====
+const observer = new IntersectionObserver(entries=>{
+  entries.forEach((e,i)=>{
+    if(e.isIntersecting){setTimeout(()=>e.target.classList.add('in'),i*80);observer.unobserve(e.target);}
+  });
+},{threshold:0.08});
+document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(el=>observer.observe(el));
+
+// ===== フォーム =====
+function handleSubmit() {
+  const name=document.getElementById('f-name').value.trim();
+  const email=document.getElementById('f-email').value.trim();
+  const msg=document.getElementById('f-msg').value.trim();
+  if(!name||!email||!msg){alert('お名前・メールアドレス・ご相談内容は必須です。');return;}
+  const btn=document.querySelector('#contact-form-inner .form-submit');
+  btn.disabled=true;
+  fetch('/',{
+    method:'POST',
+    headers:{'Content-Type':'application/x-www-form-urlencoded'},
+    body:new URLSearchParams({
+      'form-name':'contact',
+      name,
+      email,
+      date:document.getElementById('f-date').value,
+      message:msg
+    }).toString()
+  })
+  .then(()=>{
+    document.getElementById('contact-form-inner').style.display='none';
+    document.getElementById('form-success').classList.add('show');
+  })
+  .catch(()=>{
+    alert('送信に失敗しました。しばらくしてから再度お試しください。');
+    btn.disabled=false;
+  });
+}
+
+// ===== FAQ =====
+document.querySelectorAll('.faq-q').forEach(q=>{
+  q.addEventListener('click',()=>{
+    const item=q.parentElement;
+    item.classList.toggle('open');
+  });
+});
+</script>
+</body>
+</html>
