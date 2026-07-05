@@ -79,7 +79,7 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 .hero-bg .photo-wrap{width:100%;height:100%;background:linear-gradient(135deg,#e5d4c0 0%,#f7f4f1 40%,#fdfcfa 100%)}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(to right,rgba(253,252,250,.5) 0%,rgba(253,252,250,.02) 60%),linear-gradient(to top,rgba(253,252,250,.82) 0%,transparent 50%),radial-gradient(ellipse at 100% 100%,rgba(0,0,0,.4) 0%,transparent 65%)}
 .hero-content{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;width:100%;padding:0 64px 72px}
-.hero-catch{writing-mode:vertical-rl;font-family:var(--f-serif);font-weight:200;font-size:clamp(22px,3.5vw,38px);letter-spacing:.18em;color:var(--text);line-height:2;opacity:0;animation:fadeIn 1.2s ease .4s forwards}
+.hero-catch{writing-mode:vertical-rl;font-family:var(--f-serif);font-weight:200;font-size:clamp(22px,3.5vw,30px);letter-spacing:.18em;color:var(--text);line-height:2;opacity:0;animation:fadeIn 1.2s ease .4s forwards}
 .hero-catch em{font-style:normal;color:var(--accent)}
 .hero-sub-block{text-align:right;opacity:0;animation:fadeIn 1.2s ease .8s forwards}
 .hero-sub-en{font-family:var(--f-display);font-size:11px;font-style:italic;letter-spacing:.24em;color:#fff;margin-bottom:12px;display:block}
@@ -94,7 +94,7 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 @keyframes fadeIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
 @media(max-width:720px){
   .hero-content{flex-direction:column;align-items:flex-start;padding:0 28px 80px;gap:32px}
-  .hero-sub-block{text-align:left}.hero-sub-text{max-width:100%}.hero-catch{font-size:26px}
+  .hero-sub-block{text-align:left}.hero-sub-text{max-width:100%}.hero-catch{writing-mode:horizontal-tb;font-size:24px;letter-spacing:.08em;line-height:1.7}
 }
 
 /* SECTION LABEL */
@@ -182,6 +182,13 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 .modal .form-label span{color:var(--accent)}
 .modal .form-input,.modal .form-textarea{width:100%;padding:10px 0;border:none;border-bottom:1px solid var(--border);background:transparent;color:var(--text);font-family:var(--f-sans);font-size:14px;font-weight:300;outline:none;transition:border-color .3s}
 .modal .form-input:focus,.modal .form-textarea:focus{border-bottom-color:var(--accent)}
+.modal select.form-input{appearance:none;cursor:pointer}
+.iq-actions{display:flex;gap:12px;margin-top:28px}
+.iq-actions button{flex:1;padding:13px;font-family:var(--f-sans);font-size:12px;letter-spacing:.14em;cursor:pointer;border:none;transition:all .3s}
+.iq-btn-line{background:#06c755;color:#fff}.iq-btn-line:hover{opacity:.85}
+.iq-btn-mail{background:transparent;color:var(--accent);border:1px solid rgba(139,107,74,.4) !important}.iq-btn-mail:hover{background:var(--accent);color:#fff}
+.iq-note{font-size:11px;color:var(--text-lt);text-align:center;margin-top:14px;line-height:1.7}
+.iq-copied{font-size:12px;color:var(--accent);text-align:center;margin-top:10px;display:none}
 .modal .form-textarea{min-height:80px;resize:vertical}
 .modal .form-submit{width:100%;padding:14px;background:var(--accent);color:#fff;font-family:var(--f-sans);font-size:12px;letter-spacing:.16em;transition:all .3s;margin-top:8px;cursor:pointer;border:none}
 .modal .form-submit:hover{background:var(--text)}
@@ -341,9 +348,8 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
         "@type": "OfferCatalog",
         "name": "撮影プラン",
         "itemListElement": [
-          {"@type": "Offer", "name": "前撮りプラン", "price": "42800", "priceCurrency": "JPY"},
-          {"@type": "Offer", "name": "挙式・披露宴プラン", "price": "110000", "priceCurrency": "JPY"},
-          {"@type": "Offer", "name": "前撮り フォト＆ムービー", "price": "92000", "priceCurrency": "JPY"}
+          {"@type": "Offer", "name": "前撮りプラン", "price": "30000", "priceCurrency": "JPY"},
+          {"@type": "Offer", "name": "ウェディングオープニングムービープラン", "price": "50000", "priceCurrency": "JPY"}
         ]
       }
     }
@@ -497,7 +503,7 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
     </div>
   </div>
   <div class="portfolio-ig reveal">
-    <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">最新作はInstagramで見る →</a>
+    <a href="https://www.instagram.com/1sh1guch1" target="_blank" rel="noopener noreferrer">最新作はInstagramで見る →</a>
   </div>
 </section>
 
@@ -518,7 +524,6 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
       <div class="cal-grid" id="cal-grid"></div>
       <div class="cal-legend">
         <div class="cal-legend-item"><div class="cal-legend-dot" style="background:var(--accent)"></div>空きあり</div>
-        <div class="cal-legend-item"><div class="cal-legend-dot" style="background:var(--accent-pale)"></div>応相談</div>
         <div class="cal-legend-item"><div class="cal-legend-dot" style="background:#ddd"></div>埋まり</div>
       </div>
     </div>
@@ -530,9 +535,9 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
   <div class="reveal">
     <p>まずは無料でお話しします。</p>
     <div class="cta-group">
-      <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="btn-primary" style="display:inline-flex;align-items:center;gap:8px"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>Instagram でDM</a>
-      <a href="https://line.me/" target="_blank" rel="noopener noreferrer" class="btn-line" style="display:inline-flex;align-items:center;gap:8px"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>LINE で相談</a>
-      <a href="#contact" class="btn-ghost">メールで相談</a>
+      <a href="https://www.instagram.com/1sh1guch1" target="_blank" rel="noopener noreferrer" class="btn-primary" style="display:inline-flex;align-items:center;gap:8px"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>Instagram でDM</a>
+      <a href="javascript:void(0)" onclick="openInquiryModal()" class="btn-line" style="display:inline-flex;align-items:center;gap:8px"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>LINE で相談</a>
+      <a href="javascript:void(0)" onclick="openInquiryModal()" class="btn-ghost">メールで相談</a>
     </div>
   </div>
 </section>
@@ -678,12 +683,12 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
         <span class="sec-label">お問い合わせ</span>
         <div class="sec-rule"></div>
         <h2 class="contact-lead">まずは、<br/>お気軽にどうぞ。</h2>
-        <p class="contact-body">撮影の相談、料金の確認など、どんな内容でもお気軽にご連絡ください。返信は通常２営業日以内にいたします。</p>
+        <p class="contact-body">撮影の相談、料金の確認など、どんな内容でもお気軽にご連絡ください。返信は通常24時間以内にいたします。</p>
         <div class="contact-sns">
-          <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="sns-btn ig">
+          <a href="https://www.instagram.com/1sh1guch1" target="_blank" rel="noopener noreferrer" class="sns-btn ig">
             <span class="sns-icon"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></span>Instagram で DM する
           </a>
-          <a href="https://line.me/" target="_blank" rel="noopener noreferrer" class="sns-btn ln">
+          <a href="javascript:void(0)" onclick="openInquiryModal()" class="sns-btn ln">
             <span class="sns-icon"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg></span>LINE で相談する
           </a>
         </div>
@@ -711,7 +716,7 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
         <div class="form-success" id="form-success">
           <div class="form-success-icon">✉️</div>
           <h3>送信しました</h3>
-          <p>２営業日以内にご連絡いたします。</p>
+          <p>24時間以内にご連絡いたします。</p>
         </div>
       </div>
     </div>
@@ -735,12 +740,42 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 
 <!-- スマホ固定CTA -->
 <div class="fixed-cta">
-  <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="fc-ig"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="vertical-align:middle;margin-right:6px"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>Instagram でDM</a>
-  <a href="https://line.me/" target="_blank" rel="noopener noreferrer" class="fc-ln"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="vertical-align:middle;margin-right:6px"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>LINE で相談</a>
+  <a href="https://www.instagram.com/1sh1guch1" target="_blank" rel="noopener noreferrer" class="fc-ig"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="vertical-align:middle;margin-right:6px"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>Instagram でDM</a>
+  <a href="javascript:void(0)" onclick="openInquiryModal()" class="fc-ln"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="vertical-align:middle;margin-right:6px"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>LINE で相談</a>
 </div>
 
 <!-- ページトップボタン -->
 <button class="to-top" id="to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<!-- 問い合わせテンプレートモーダル -->
+<div class="modal-overlay" id="inquiry-overlay">
+  <div class="modal">
+    <div class="modal-close" onclick="closeInquiryModal()">×</div>
+    <h3 class="modal-title">ご相談内容を入力してください</h3>
+    <div class="form-group">
+      <label class="form-label">お名前<span>*</span></label>
+      <input class="form-input" id="iq-name" placeholder="山田 花子"/>
+    </div>
+    <div class="form-group">
+      <label class="form-label">希望プラン<span>*</span></label>
+      <select class="form-input" id="iq-plan">
+        <option value="">選択してください</option>
+        <option value="前撮りプラン">前撮りプラン</option>
+        <option value="ウェディングオープニングムービープラン">ウェディングオープニングムービープラン</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label class="form-label">希望日程<span>*</span></label>
+      <input class="form-input" id="iq-date" placeholder="例：2025年10月頃、10月15日など"/>
+    </div>
+    <div class="iq-actions">
+      <button class="iq-btn-line" onclick="sendInquiryViaLine()"><svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" style="vertical-align:middle;margin-right:6px"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>LINEで送る</button>
+      <button class="iq-btn-mail" onclick="sendInquiryViaEmail()">メールで送る</button>
+    </div>
+    <p class="iq-copied" id="iq-copied">テキストをコピーしました。LINEに貼り付けてください。</p>
+    <p class="iq-note">LINEはテキストをコピーしてからLINEを開きます。</p>
+  </div>
+</div>
 
 <!-- カレンダーモーダル -->
 <div class="modal-overlay" id="modal-overlay">
@@ -771,7 +806,7 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
     <div class="modal-success" id="modal-success">
       <div class="modal-success-icon">✉️</div>
       <h3>送信しました</h3>
-      <p>２営業日以内にご連絡いたします。</p>
+      <p>24時間以内にご連絡いたします。</p>
     </div>
   </div>
 </div>
@@ -779,14 +814,13 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 <script>
 // ===== 料金データ =====
 const plans = [
-  {badge:'前撮り・フォトウェディング',name:'前撮りプラン',desc:'思い出の場所や季節の風景と共に、自然体のお二人を丁寧に記録します。',price:'¥42,800',note:'出張費込み・打ち合わせあり',includes:['2時間の撮影','100枚以上の納品','色味補正あり']},
-  {badge:'挙式・披露宴',name:'挙式・披露宴プラン',desc:'控室から送賓まで、一瞬一瞬を丁寧に記録。ゲストでは撮りきれない表情を残します。',price:'¥110,000',note:'出張費込み・打ち合わせあり',includes:['控室～送賓の撮影','指示書OK','800枚以上納品']},
-  {badge:'一番人気',name:'前撮り フォト＆ムービー',desc:'写真と動画の両方を一人が担当。世界観を統一したまま、特別な一日を残します。',price:'¥92,000',note:'出張費込み・打ち合わせあり',includes:['写真100枚以上納品','動画1本（音源指定OK）','色味補正あり']},
+  {badge:'前撮り・フォトウェディング',name:'前撮りプラン',desc:'思い出の場所や季節の風景と共に、自然体のお二人を丁寧に記録します。',price:'¥30,000',note:'出張費込み・打ち合わせあり',includes:['時間無制限','100枚以上の納品','色味補正あり']},
+  {badge:'一番人気',name:'ウェディングオープニングムービープラン',desc:'写真と動画の両方を一人が担当。世界観を統一したまま、特別な一日を残します。',price:'¥50,000',note:'出張費込み・打ち合わせあり',includes:['時間無制限','写真100枚以上の納品','動画1本（音源指定OK）','色味補正あり']},
 ];
 const options = [
-  {name:'データ無制限',price:'¥20,000'},{name:'時間延長',price:'¥5,000〜'},
-  {name:'二次会撮影',price:'¥30,000'},{name:'アルバム',price:'¥16,000〜'},
-  {name:'24時間納品',price:'¥10,000〜'},
+  {name:'データ無制限',price:'¥20,000'},
+  {name:'美肌補正',price:'¥10,000'},
+  {name:'二次会撮影',price:'¥20,000'},
 ];
 const pg = document.getElementById('pricing-grid');
 plans.forEach(p => {
@@ -804,24 +838,51 @@ options.forEach(o => {
 });
 
 // ===== カレンダー =====
-// 空き状況：'available'=空き, 'booked'=埋まり, 'consultation'=応相談
-// ※ 実際の空き状況に合わせて手動で更新してください
-const availability = {
-  '2026-06-07':'booked','2026-06-08':'booked','2026-06-13':'available',
-  '2026-06-14':'available','2026-06-15':'consultation','2026-06-20':'available',
-  '2026-06-21':'available','2026-06-22':'available','2026-06-27':'available',
-  '2026-06-28':'booked','2026-07-04':'available','2026-07-05':'available',
-  '2026-07-11':'available','2026-07-12':'consultation','2026-07-18':'available',
-  '2026-07-19':'available','2026-07-20':'available','2026-07-25':'booked',
-  '2026-07-26':'available',
-};
+// ===== カレンダー（Google Calendar連携）=====
+const GCAL_API_KEY = 'AIzaSyCMVD9T77FlpHV6r_oTbcIux0xuM9VXLlg';
+const GCAL_ID = 'i.h.gstylus@gmail.com';
 
+let availability = {};
 let calYear, calMonth;
 const now = new Date();
 calYear = now.getFullYear(); calMonth = now.getMonth();
 
 const dows = ['日','月','火','水','木','金','土'];
-const monthNames = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+
+async function fetchCalendar() {
+  const start = new Date(calYear, calMonth, 1);
+  const end = new Date(calYear, calMonth + 3, 1);
+  try {
+    const res = await fetch(
+      `https://www.googleapis.com/calendar/v3/freeBusy?key=${GCAL_API_KEY}`,
+      {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+          timeMin: start.toISOString(),
+          timeMax: end.toISOString(),
+          items: [{id: GCAL_ID}]
+        })
+      }
+    );
+    const data = await res.json();
+    const busy = (data.calendars && data.calendars[GCAL_ID] && data.calendars[GCAL_ID].busy) || [];
+    const d = new Date(start);
+    while (d < end) {
+      if (d.getDay() === 0 || d.getDay() === 6) {
+        const key = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+        const dayStart = new Date(key + 'T00:00:00+09:00');
+        const dayEnd = new Date(key + 'T23:59:59+09:00');
+        const isBusy = busy.some(p => new Date(p.start) < dayEnd && new Date(p.end) > dayStart);
+        availability[key] = isBusy ? 'booked' : 'available';
+      }
+      d.setDate(d.getDate() + 1);
+    }
+  } catch(e) {
+    console.error('カレンダー取得エラー:', e);
+  }
+  renderCalendar();
+}
 
 function renderCalendar() {
   const label = document.getElementById('cal-month-label');
@@ -839,20 +900,21 @@ function renderCalendar() {
     const el = document.createElement('div');
     const dateStr = `${calYear}-${String(calMonth+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
     const status = availability[dateStr] || '';
-    el.className = `cal-day ${status}`;
+    el.className = `cal-day${status?' '+status:''}`;
     const isToday = (d===now.getDate()&&calMonth===now.getMonth()&&calYear===now.getFullYear());
     if(isToday) el.classList.add('today');
-    const statusLabel = status==='available'?'空きあり':status==='booked'?'埋まり':status==='consultation'?'応相談':'';
+    const statusLabel = status==='available'?'空きあり':status==='booked'?'埋まり':'';
     el.innerHTML = `<span class="cal-day-num">${d}</span>${statusLabel?`<span class="cal-day-status">${statusLabel}</span>`:''}`;
-    if(status==='available'||status==='consultation'){
+    if(status==='available'){
       el.addEventListener('click',()=>openModal(dateStr,d));
     }
     grid.appendChild(el);
   }
 }
+
 document.getElementById('cal-prev').addEventListener('click',()=>{calMonth--;if(calMonth<0){calMonth=11;calYear--;}renderCalendar();});
 document.getElementById('cal-next').addEventListener('click',()=>{calMonth++;if(calMonth>11){calMonth=0;calYear++;}renderCalendar();});
-renderCalendar();
+fetchCalendar();
 
 // ===== モーダル =====
 function openModal(dateStr, day) {
@@ -942,6 +1004,41 @@ function handleSubmit() {
     alert('送信に失敗しました。しばらくしてから再度お試しください。');
     btn.disabled=false;
   });
+}
+
+// ===== 問い合わせテンプレートモーダル =====
+function openInquiryModal() {
+  document.getElementById('iq-name').value = '';
+  document.getElementById('iq-plan').value = '';
+  document.getElementById('iq-date').value = '';
+  document.getElementById('iq-copied').style.display = 'none';
+  document.getElementById('inquiry-overlay').classList.add('show');
+}
+function closeInquiryModal() {
+  document.getElementById('inquiry-overlay').classList.remove('show');
+}
+document.getElementById('inquiry-overlay').addEventListener('click', e => {
+  if (e.target === document.getElementById('inquiry-overlay')) closeInquiryModal();
+});
+function buildInquiryText() {
+  const name = document.getElementById('iq-name').value.trim();
+  const plan = document.getElementById('iq-plan').value;
+  const date = document.getElementById('iq-date').value.trim();
+  if (!name || !plan || !date) { alert('すべての項目を入力してください。'); return null; }
+  return `はじめまして、${name} と申します。\n\n希望プラン：${plan}\n希望日程：${date}\n\nご連絡をよろしくお願いいたします。`;
+}
+function sendInquiryViaLine() {
+  const text = buildInquiryText();
+  if (!text) return;
+  navigator.clipboard.writeText(text).then(() => {
+    document.getElementById('iq-copied').style.display = 'block';
+    setTimeout(() => { window.open('https://line.me/ti/p/AQCn7G7nvn', '_blank'); }, 600);
+  });
+}
+function sendInquiryViaEmail() {
+  const text = buildInquiryText();
+  if (!text) return;
+  window.location.href = 'mailto:i.h.gstylus@gmail.com?subject=' + encodeURIComponent('撮影のご相談') + '&body=' + encodeURIComponent(text);
 }
 
 // ===== FAQ =====
