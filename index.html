@@ -364,6 +364,9 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 <form name="modal-contact" data-netlify="true" hidden>
   <input name="name"/><input name="email"/><input name="plan"/><input name="date"/><input name="message"/>
 </form>
+<form name="inquiry" data-netlify="true" hidden>
+  <input name="name"/><input name="email"/><input name="plan"/><input name="date1"/><input name="date2"/><input name="date3"/>
+</form>
 
 <!-- NAV -->
 <nav class="nav" id="nav">
@@ -749,24 +752,43 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 <div class="modal-overlay" id="inquiry-overlay">
   <div class="modal">
     <div class="modal-close" onclick="closeInquiryModal()">×</div>
-    <h3 class="modal-title">ご相談内容を入力してください</h3>
-    <div class="form-group">
-      <label class="form-label">お名前<span>*</span></label>
-      <input class="form-input" id="iq-name" placeholder="山田 花子"/>
+    <div id="iq-form-wrap">
+      <h3 class="modal-title">ご相談内容を入力してください</h3>
+      <div class="form-group">
+        <label class="form-label">お名前<span>*</span></label>
+        <input class="form-input" id="iq-name" placeholder="山田 花子"/>
+      </div>
+      <div class="form-group">
+        <label class="form-label">メールアドレス<span>*</span></label>
+        <input class="form-input" type="email" id="iq-email" placeholder="example@email.com"/>
+      </div>
+      <div class="form-group">
+        <label class="form-label">希望プラン<span>*</span></label>
+        <select class="form-input" id="iq-plan">
+          <option value="">選択してください</option>
+          <option value="前撮りプラン">前撮りプラン</option>
+          <option value="ウェディングオープニングムービープラン">ウェディングオープニングムービープラン</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">希望日程 第1候補<span>*</span></label>
+        <input class="form-input" id="iq-date1" placeholder="例：10月15日、10月中旬など"/>
+      </div>
+      <div class="form-group">
+        <label class="form-label">希望日程 第2候補</label>
+        <input class="form-input" id="iq-date2" placeholder="任意"/>
+      </div>
+      <div class="form-group">
+        <label class="form-label">希望日程 第3候補</label>
+        <input class="form-input" id="iq-date3" placeholder="任意"/>
+      </div>
+      <button class="iq-btn-mail" onclick="submitInquiry()" style="width:100%;margin-top:28px">送信する</button>
     </div>
-    <div class="form-group">
-      <label class="form-label">希望プラン<span>*</span></label>
-      <select class="form-input" id="iq-plan">
-        <option value="">選択してください</option>
-        <option value="前撮りプラン">前撮りプラン</option>
-        <option value="ウェディングオープニングムービープラン">ウェディングオープニングムービープラン</option>
-      </select>
+    <div class="modal-success" id="iq-success">
+      <div class="modal-success-icon">✉️</div>
+      <h3>送信しました</h3>
+      <p>確認メールをお送りしました。<br/>24時間以内にご連絡いたします。</p>
     </div>
-    <div class="form-group">
-      <label class="form-label">希望日程<span>*</span></label>
-      <input class="form-input" id="iq-date" placeholder="例：2025年10月頃、10月15日など"/>
-    </div>
-    <button class="iq-btn-mail" onclick="sendInquiryViaEmail()" style="width:100%;margin-top:28px">メールで送る</button>
   </div>
 </div>
 
@@ -1001,9 +1023,10 @@ function handleSubmit() {
 
 // ===== 問い合わせテンプレートモーダル =====
 function openInquiryModal() {
-  document.getElementById('iq-name').value = '';
+  ['iq-name','iq-email','iq-date1','iq-date2','iq-date3'].forEach(id => document.getElementById(id).value = '');
   document.getElementById('iq-plan').value = '';
-  document.getElementById('iq-date').value = '';
+  document.getElementById('iq-form-wrap').style.display = '';
+  document.getElementById('iq-success').classList.remove('show');
   document.getElementById('inquiry-overlay').classList.add('show');
 }
 function closeInquiryModal() {
@@ -1012,17 +1035,23 @@ function closeInquiryModal() {
 document.getElementById('inquiry-overlay').addEventListener('click', e => {
   if (e.target === document.getElementById('inquiry-overlay')) closeInquiryModal();
 });
-function buildInquiryText() {
-  const name = document.getElementById('iq-name').value.trim();
-  const plan = document.getElementById('iq-plan').value;
-  const date = document.getElementById('iq-date').value.trim();
-  if (!name || !plan || !date) { alert('すべての項目を入力してください。'); return null; }
-  return `はじめまして、${name} と申します。\n\n希望プラン：${plan}\n希望日程：${date}\n\nご連絡をよろしくお願いいたします。`;
-}
-function sendInquiryViaEmail() {
-  const text = buildInquiryText();
-  if (!text) return;
-  window.location.href = 'mailto:i.h.gstylus@gmail.com?subject=' + encodeURIComponent('撮影のご相談') + '&body=' + encodeURIComponent(text);
+function submitInquiry() {
+  const name  = document.getElementById('iq-name').value.trim();
+  const email = document.getElementById('iq-email').value.trim();
+  const plan  = document.getElementById('iq-plan').value;
+  const date1 = document.getElementById('iq-date1').value.trim();
+  const date2 = document.getElementById('iq-date2').value.trim();
+  const date3 = document.getElementById('iq-date3').value.trim();
+  if (!name || !email || !plan || !date1) { alert('お名前・メールアドレス・希望プラン・第1候補は必須です。'); return; }
+  const btn = document.querySelector('#iq-form-wrap .iq-btn-mail');
+  btn.disabled = true;
+  const body = new URLSearchParams({ 'form-name':'inquiry', name, email, plan, date1, date2, date3 });
+  fetch('/', { method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body: body.toString() })
+    .then(() => {
+      document.getElementById('iq-form-wrap').style.display = 'none';
+      document.getElementById('iq-success').classList.add('show');
+    })
+    .catch(() => { alert('送信に失敗しました。もう一度お試しください。'); btn.disabled = false; });
 }
 
 // ===== FAQ =====
